@@ -1,0 +1,20 @@
+{
+    "promoCodes": [
+        {
+            "code": "EVENT-ABC123",
+            "rewardType": "1000 Coins",
+            "creator": "John Doe",
+            "expiration": "2025-12-31",
+            "notes": "Summer event promotion",
+            "createdAt": "2024-03-15T10:30:00.000Z"
+        },
+        {
+            "code": "BETA-XYZ789",
+            "rewardType": "Premium Skin",
+            "creator": "Jane Smith",
+            "expiration": "2024-06-30",
+            "notes": "Beta tester reward",
+            "createdAt": "2024-03-14T15:45:00.000Z"
+        }
+    ]
+} 

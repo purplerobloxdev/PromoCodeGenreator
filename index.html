@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Promo Code Generator - Bluestar Games Studio</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="warning-banner">
+        ⚠️ Warning: Promo codes must be manually implemented in-game by developers.
+    </div>
+
+    <div class="container">
+        <header>
+            <h1>Promo Code Generator</h1>
+            <p class="subtitle">Internal Tool - Bluestar Games Studio</p>
+        </header>
+
+        <main>
+            <section class="generator-form">
+                <h2>Generate New Code</h2>
+                <form id="promoForm">
+                    <div class="form-group">
+                        <label for="prefix">Prefix:</label>
+                        <select id="prefix" name="prefix">
+                            <option value="">None</option>
+                            <option value="EVENT-">EVENT-</option>
+                            <option value="BETA-">BETA-</option>
+                            <option value="VIP-">VIP-</option>
+                            <option value="SPECIAL-">SPECIAL-</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="rewardType">Reward Type:</label>
+                        <input type="text" id="rewardType" name="rewardType" required 
+                               placeholder="e.g., 1000 Coins, Premium Skin">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="creator">Creator:</label>
+                        <input type="text" id="creator" name="creator" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="expiration">Expiration Date:</label>
+                        <input type="date" id="expiration" name="expiration">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="notes">Notes/Context:</label>
+                        <textarea id="notes" name="notes" rows="3" 
+                                  placeholder="Add any additional context or notes"></textarea>
+                    </div>
+
+                    <button type="submit" class="btn-generate">Generate Code</button>
+                </form>
+            </section>
+
+            <section class="codes-list">
+                <div class="codes-header">
+                    <h2>Generated Codes</h2>
+                    <button id="exportCSV" class="btn-export">Export to CSV</button>
+                </div>
+                <div class="codes-container" id="codesList">
+                    <!-- Codes will be inserted here by JavaScript -->
+                </div>
+            </section>
+        </main>
+
+        <footer>
+            <p>© 2025 Bluestar Games Studio | Internal Use Only</p>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html> 
